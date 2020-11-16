@@ -1,0 +1,12 @@
+F:\ProcSource\SelfProc\MyProc\WinningWorkflowSettting\bin\Debug\WinningWorkflowSettting.exe
+F:\ProcSource\SelfProc\MyProc\WinningWorkflowSettting\bin\Debug\WinningWorkflowSettting.pdb
+F:\ProcSource\SelfProc\MyProc\WinningWorkflowSettting\obj\Debug\WinningWorkflowSettting.frmMain.resources
+F:\ProcSource\SelfProc\MyProc\WinningWorkflowSettting\obj\Debug\WinningWorkflowSettting.Properties.Resources.resources
+F:\ProcSource\SelfProc\MyProc\WinningWorkflowSettting\obj\Debug\WinningWorkflowSettting.csproj.GenerateResource.cache
+F:\ProcSource\SelfProc\MyProc\WinningWorkflowSettting\obj\Debug\WinningWorkflowSettting.exe
+F:\ProcSource\SelfProc\MyProc\WinningWorkflowSettting\obj\Debug\WinningWorkflowSettting.pdb
+F:\ProcSource\SelfProc\MyProc\WinningWorkflowSettting\obj\Debug\WinningWorkflowSettting.FormGetActivity.resources
+F:\ProcSource\SelfProc\MyProc\WinningWorkflowSettting\bin\Debug\Newtonsoft.Json.dll
+F:\ProcSource\SelfProc\MyProc\WinningWorkflowSettting\obj\Debug\WinningWorkflowSettting.csprojAssemblyReference.cache
+F:\ProcSource\SelfProc\MyProc\WinningWorkflowSettting\obj\Debug\WinningWorkflowSettting.csproj.CoreCompileInputs.cache
+F:\ProcSource\SelfProc\MyProc\WinningWorkflowSettting\obj\Debug\WinningWorkflowSettting.csproj.CopyComplete

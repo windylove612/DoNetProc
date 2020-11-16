@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C9E0CD4D-D406-40F7-92E3-9F7BBA819C0B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WhatYouWant</RootNamespace>
+    <AssemblyName>EveryDone</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Image\icon2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells">
+      <HintPath>..\..\..\..\..\vs\Tools\NPOI-Lib\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v14.1.Core, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v14.1.Core, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v14.1.Core, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v14.1, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.1, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v14.1, Version=14.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="JsonObject">
+      <HintPath>..\..\..\Tools\JsonObject.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\Tools\NETJson\Net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=1.2.4.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\vs\Tools\NPOI-Lib\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>..\..\..\..\..\vs\Tools\NPOI-Lib\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>..\..\..\..\..\vs\Tools\NPOI-Lib\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats">
+      <HintPath>..\..\..\..\..\vs\Tools\NPOI-Lib\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Net.Requests" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Text.RegularExpressions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApiData\ApiUtils.cs" />
+    <Compile Include="ApiData\OpenFolderHelper.cs" />
+    <Compile Include="ApiData\PubApi.cs" />
+    <Compile Include="Common\commonUtils.cs" />
+    <Compile Include="Common\HotKey.cs" />
+    <Compile Include="DataBaseDetailSection.cs" />
+    <Compile Include="DataBaseSection.cs" />
+    <Compile Include="DataObject\addressDataObject.cs" />
+    <Compile Include="DataObject\apiDataObject.cs" />
+    <Compile Include="DataObject\weatherDataObject.cs" />
+    <Compile Include="Splash\ISplashForm.cs" />
+    <Compile Include="Splash\Splash.cs" />
+    <Compile Include="UI\ApiDataUi\fmKuaiDi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ApiDataUi\fmKuaiDi.Designer.cs">
+      <DependentUpon>fmKuaiDi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ApiDataUi\fmPhoneEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ApiDataUi\fmPhoneEdit.Designer.cs">
+      <DependentUpon>fmPhoneEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\fmApiBigData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\fmApiBigData.Designer.cs">
+      <DependentUpon>fmApiBigData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\fmDataBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\fmDataBase.Designer.cs">
+      <DependentUpon>fmDataBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\fmHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\fmHelp.Designer.cs">
+      <DependentUpon>fmHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\fmLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\fmLoading.Designer.cs">
+      <DependentUpon>fmLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\fmPostCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\fmPostCode.Designer.cs">
+      <DependentUpon>fmPostCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Units\Excel\AsPoseHelper.cs" />
+    <Compile Include="Units\Excel\ExcelHelper.cs" />
+    <Compile Include="Units\Excel\excelUtils.cs" />
+    <Compile Include="UI\fmEnterContent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\fmEnterContent.Designer.cs">
+      <DependentUpon>fmEnterContent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\fmSelType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\fmSelType.Designer.cs">
+      <DependentUpon>fmSelType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\fmSetDir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\fmSetDir.Designer.cs">
+      <DependentUpon>fmSetDir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\fmSetModelType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\fmSetModelType.Designer.cs">
+      <DependentUpon>fmSetModelType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\fmSetOtherProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\fmSetOtherProcess.Designer.cs">
+      <DependentUpon>fmSetOtherProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fmUsefulInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmUsefulInfo.Designer.cs">
+      <DependentUpon>fmUsefulInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Units\File\pubFunction.cs" />
+    <Compile Include="Common\pubDefines.cs" />
+    <Compile Include="Units\File\useUtils.cs" />
+    <Compile Include="Units\Weather\weatherUtils.cs" />
+    <Compile Include="Web References\cn.com.webxml.www\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\ApiDataUi\fmKuaiDi.resx">
+      <DependentUpon>fmKuaiDi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ApiDataUi\fmPhoneEdit.resx">
+      <DependentUpon>fmPhoneEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\fmApiBigData.resx">
+      <DependentUpon>fmApiBigData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\fmDataBase.resx">
+      <DependentUpon>fmDataBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\fmEnterContent.resx">
+      <DependentUpon>fmEnterContent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\fmHelp.resx">
+      <DependentUpon>fmHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\fmLoading.resx">
+      <DependentUpon>fmLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\fmPostCode.resx">
+      <DependentUpon>fmPostCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\fmSelType.resx">
+      <DependentUpon>fmSelType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\fmSetDir.resx">
+      <DependentUpon>fmSetDir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\fmSetModelType.resx">
+      <DependentUpon>fmSetModelType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\fmSetOtherProcess.resx">
+      <DependentUpon>fmSetOtherProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmUsefulInfo.resx">
+      <DependentUpon>fmUsefulInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Web References\cn.com.webxml.www\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\cn.com.webxml.www\WeatherWebService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Image\icon.ico" />
+    <Content Include="Image\icon2.ico" />
+    <None Include="Web References\cn.com.webxml.www\WeatherWebService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://www.webxml.com.cn/WebServices/WeatherWebService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\cn.com.webxml.www\</RelPath>
+      <UpdateFromURL>http://www.webxml.com.cn/WebServices/WeatherWebService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>EveryDone_cn_com_webxml_www_WeatherWebService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
